@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tanque de Agua</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="tank">
+        <div class="water" id="waterLevel"></div>
+    </div>
+
+    <script>
+        // Obtener el nivel del tanque (valor entre 0 y 100)
+        var nivel = 50;
+
+        // Obtener el elemento del nivel del agua
+        var waterLevel = document.getElementById("waterLevel");
+
+        // Calcular la altura del nivel del agua en píxeles
+        var alturaAgua = (nivel / 100) * 290;
+
+        // Establecer la altura del nivel del agua
+        waterLevel.style.height = alturaAgua + "px";
+    </script>
+</body>
+</html>
