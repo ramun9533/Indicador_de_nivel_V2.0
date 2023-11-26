@@ -76,6 +76,7 @@ void loop() {
     nivel = 2; // USAR LOGICA DE JAVA SRIP PARA EL CODIGO ERROR
     
   }
+   
     // Esperamos a que se conecte un cliente
   WiFiClient client = server.available();
   if (client) {
@@ -103,11 +104,14 @@ void loop() {
           client.println("Connection: close");  // la conexión se cerrará después de completar la respuesta
           client.println();
 client.print(responseHTML);//jalo la pagina html por medio de: const char *html = R"====( 
-          
+client.print(nivel);
+client.print(responseHTML1);          
           break;
         }
-
-        
+        //Para monitorear salida
+        //delay(500);
+        //Serial.println(" ");
+        //Serial.println(nivel);
           // Empieza una nueva línea
          
       }
@@ -116,6 +120,7 @@ client.print(responseHTML);//jalo la pagina html por medio de: const char *html 
     // Cerramos la conexión con el cliente
     client.stop();
     Serial.println("Cliente desconectado");
+    
   }
 
  
