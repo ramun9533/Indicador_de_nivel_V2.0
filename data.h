@@ -85,22 +85,25 @@ function setGaugeValue(gauge, value) {
   )}%`;
 }
 
-setGaugeValue(gaugeElement, 0.9);
+setGaugeValue(gaugeElement, 
 
+ )====";
 
-    </script>
+const String responseHTML1 =  R"====(
+ );  </script>
     <footer></footer>
   </body>
 </html>
 
-    )====";
-    const String responseHTML1 =  R"====(<div class="box">
-        <p>SALIDA # )====";
-     const String responseHTML2  = R"====(</p>
-        <a href="/on)====";
-     const String responseHTML3  = R"====(">ON</a>
-        <a href="/off)====";
-     const String responseHTML4  = R"====(">OFF</a>&nbsp
-    </div>)====";  
+ )====";
+        const String responseHTML3 =  R"====(   )====";
+
+      // Función para actualizar el valor del medidor con un nuevo valor aleatorio
+      
+      const String responseHTML2 =  R"====( )====";
+
+
+   
+
   const String responseHTML5 =  R"====(  </div>    </body>  </html>
      )====";
