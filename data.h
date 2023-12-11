@@ -90,7 +90,14 @@ setGaugeValue(gaugeElement,
  )====";
 
 const String responseHTML1 =  R"====(
- );  </script>
+ ); 
+  // Función para recargar la página cada segundo
+        function autoRefresh() {
+            location.reload();
+        }
+
+        // Llamar a la función cada 1000 milisegundos (1 segundo)
+        setInterval(autoRefresh, 1000);</script>
     <footer></footer>
   </body>
 </html>
